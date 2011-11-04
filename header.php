@@ -54,15 +54,6 @@
 <![endif]-->
 
 <?php wp_head(); ?>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/GrojectImageSwitch.js"></script>
-<script type="text/javascript">
-	$(document).ready({  
-		$("#TestTrigger").click(function(){  
-			$("#TestImg").ImageSwitch({NewImage:"image2"});  
-		});  
-	});  
-</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -70,7 +61,7 @@
 	<header id="branding" role="banner">
 		<hgroup>
 			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<img id="logo" src="http://localhost/bookie.mx.02/wp-content/themes/toolbox/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
+				<img id="logo" src="http://localhost/wordpress/wp-content/themes/toolbox/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
 			</a>
 			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
@@ -87,8 +78,7 @@
 	</header><!-- #branding -->
 	<div id="carcontainer">
 		<div id="carrousel">
-			<img id="TestImg" src="http://localhost/bookie.mx.02/wp-content/themes/toolbox/img/slide01.jpg" alt="Slide" />
-			<a href="http://www.hieu.co.uk/blog/index.php/imageswitch/docs/#" id="TestTrigger">Trigger</a>
+			<img id="TestImg" src="http://localhost/wordpress/wp-content/themes/toolbox/img/slide01.jpg" alt="Slide" />
 		</div>
 	</div><!-- #carcontainer -->
 	<div id="main">
