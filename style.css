@@ -69,7 +69,6 @@ html{
 	padding:0px;
 	margin:0px;
 	border:0;
-	height:100%;
 	}
 
 body{
@@ -79,13 +78,18 @@ body{
 	background-image:url(img/noiseback.gif);
 	background-repeat:repeat-y;
 	background-position:center;
-	height:100%;
 	font-family:Arial, Helvetica, sans-serif;
 	color:#fff5f5;
+	overflow
 	}
 
+article{
+	padding:10px;
+	margin-bottom:25px;
+	border-bottom:1px #fff dotted;
+}
 h1 {
-	font-family:'IstokWebBold',Arial, Helvetica, sans-serif;
+	/*font-family:'IstokWebBold',Arial, Helvetica, sans-serif;*/
 	font-size:15pt;
 	color:#fff5f5;
 	text-shadow: -1px -1px 2px #000000;
@@ -107,6 +111,24 @@ a:hover{
 	margin-right:auto;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+#branding{
+	padding:17px 0 0;
+	background-image:url(img/brandingback.gif);
+	background-position:left;
+	background-repeat:no-repeat;
+	position:relative;
+	height:53px;
+}
+#logo{
+	position:absolute;
+	left:65px;
+	top:6px;
+}
+.menu{
+	float:right;
+	margin-right:120px;
+	margin-top:5px;
 }
 #primary {
 	float: left;
@@ -172,23 +194,23 @@ a:hover{
 	font-weight: normal;
 	margin: 0 0 1em;
 }
-
-
 /* =Menu
 -------------------------------------------------------------- */
 
 #access {
 	background-image:url(img/menulight.gif);
-	background-position:bottom;
+	background-position:center top;
+	background-repeat:no-repeat;
 	display: block;
 	float: left;
-	margin: 0 auto 1em;
+	margin: 53px auto 0;
 	width: 100%;
+	height:67px;
 }
 #access ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding-right: 110px;
 }
 #access li {
 	float: left;
@@ -199,6 +221,7 @@ a:hover{
 	line-height: 2em;
 	padding: 0 1em;
 	text-decoration: none;
+	text-shadow: 1px 1px 3px #000000;
 }
 #access ul ul {
 	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -224,7 +247,8 @@ a:hover{
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #000;
+	color:#f05131;
+	/*background-image:url('img/20back.png');*/
 }
 #access ul ul a:hover {
 	background: #cecece;
@@ -239,7 +263,7 @@ a:hover{
 #carcontainer{
 	display:block;
 	width:100%;
-	height:347px;
+	height:381px;
 	margin-left:auto;
 	margin-right:auto;
 	background-image: url(img/slicerback.gif);
@@ -265,6 +289,9 @@ a:hover{
 }
 .single-author .entry-meta .byline {
 	display: none;
+}
+.entry-title{
+	font-size:18pt;
 }
 #content nav {
 	display: block;
@@ -408,13 +435,19 @@ img.size-medium,
 }
 img.alignleft {
 	margin-right: 1em;
+	background-image:url('img/20back.png');
+	padding:.5em;
 }
 img.alignright {
 	margin-left: 1em;
+	background-image:url('img/20back.png');
+	padding:.5em;
 }
 .wp-caption {
 	padding: .5em;
+	background-image:url('img/20back.png');
 	text-align: center;
+	margin:10px;
 }
 .wp-caption img {
 	margin: .25em;
@@ -427,7 +460,13 @@ img.alignright {
 .wp-smiley {
 	margin: 0;
 }
-
+.more-link{
+	width:100%;
+	float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-weight:700;
+}
 
 /* =Forms
 -------------------------------------------------------------- */
@@ -505,3 +544,24 @@ article.comment {
 	margin-right:auto;
 	width:986px;
 }
+
+/* Carrousel
+-------------------------------------------------------------------*/
+
+#container{overflow:hidden;margin:80px auto 0px;width:570px;}
+#container .js{overflow:hidden;zoom:1;}
+#container .galeriaFotos , #container .galeriaFotos  .carousel-wrap{margin:0;border:0;zoom:1;}
+#container .js .carousel-wrap{display:inline-block;vertical-align:middle;width:480px;height:208px;margin:0 5px;}
+.IE #container .js .carousel-wrap{display:inline;}
+#container .galeriaFotos ul{margin:0;padding:0;zoom:1;height:204px;}
+#container .js ul li{overflow:hidden;display:inline;float:left;width:480px;height:212px;text-align:center;zoom:1;}
+#container .js ul li img{border:solid 4px #fff;}
+#container .galeriaFotos .carousel-control{overflow:hidden;display:inline-block;vertical-align:middle;width:40px;height:40px;cursor:pointer;line-height:999px;zoom:1;border:0;text-indent:-9999px;}
+#container .galeriaFotos .carousel-next{background:url(img/next.gif) 0 0 no-repeat;}
+#container .galeriaFotos .carousel-previous{background:url(img/prev.gif) 0 0 no-repeat;}
+#container .galeriaFotos .carousel-control:hover{-moz-opacity:.7;opacity:0.70;filter:alpha(opacity=70);}
+#container .carousel .disabled,#container .carousel .disabled:hover{-moz-opacity:.1;opacity:0.10;filter:alpha(opacity=10);cursor:default;}
+#container .carousel div{margin:0;padding:0;border:0;}
+#container .carousel ul{padding:0;list-style:none;}
+#container .carousel ul li{position:relative;width:480px;margin:0;}
+#port{margin:20px 0px;}

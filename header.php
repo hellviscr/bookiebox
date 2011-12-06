@@ -54,16 +54,19 @@
 <![endif]-->
 
 <?php wp_head(); ?>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.7.1.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 		<hgroup>
-			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<img id="logo" src="http://localhost/wordpress/wp-content/themes/toolbox/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
-			</a>
-			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<div id="logo">
+				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+					<img id="logo" src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
+				</a>
+				<!--<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>-->
+			</div>
 		</hgroup>
 
 		<nav id="access" role="navigation">
@@ -78,7 +81,11 @@
 	</header><!-- #branding -->
 	<div id="carcontainer">
 		<div id="carrousel">
-			<img id="TestImg" src="http://localhost/wordpress/wp-content/themes/toolbox/img/slide01.jpg" alt="Slide" />
+			<ul>
+				<li><img id="TestImg" src="<?php bloginfo('template_directory'); ?>/img/slide01.jpg" alt="Slide" /></li>
+				<li><img id="TestImg" src="<?php bloginfo('template_directory'); ?>/img/slide01.jpg" alt="Slide" /></li>
+				<li><img id="TestImg" src="<?php bloginfo('template_directory'); ?>/img/slide01.jpg" alt="Slide" /></li>
+			</ul>
 		</div>
 	</div><!-- #carcontainer -->
 	<div id="main">
